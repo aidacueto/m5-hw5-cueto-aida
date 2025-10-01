@@ -7,18 +7,18 @@
     <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
   <body>
-    <div class="nav">
+    <nav class="nav">
       <a href="#">Home</a>
       <a href="#">Portfolio</a>
       <a href="#">Contact</a>
-    </div>
+    </nav>
 
-    <div class="hero">
+    <header class="hero">
       <h1>Internet Andrea</h1>
-    </div>
+    </header>
 
-    <div class="content">
-      <h3>About Me</h3>
+    <main class="content">
+      <h2>About Me</h2>
       <p>
         I'm a front-end developer with a passion for building clean, accessible,
         and responsive web experiences. I care deeply about writing semantic
@@ -43,18 +43,27 @@
         you — whether it’s a project idea, a job opportunity, or just to
         connect.
       </p>
-    </div>
+    </main>
 
-    <div class="form-section">
+    <section class="form-section">
       <h3>Reach out for a quote today!</h3>
       <form action="#">
-        <input type="text" placeholder="Your Name" />
-        <input type="email" placeholder="Your Email" />
-        <textarea rows="10" placeholder="Your Message"></textarea>
-        <div class="submit-btn">Send Message</div>
-      </form>
-    </div>
+        <label for="name">Your Name</label>
+        <input id="name" type="text" placeholder="Your Name" />
 
-    <div class="footer"><span class="icon">📞</span> Call me anytime!</div>
+        <label for="email">Your Email</label>
+        <input id="email" type="email" placeholder="Your Email" />
+
+        <label for="message">Your Message</label>
+        <textarea id="message" rows="10" placeholder="Your Message"></textarea>
+
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <span class="icon" aria-hidden="true">📞</span> 
+      <span>Call me anytime!</span> 
+    </footer>
   </body>
 </html>
